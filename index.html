@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Michael Brewer
+December 7,2020
+Micbrewe@uat.edu-->
+<html>
+    <head>
+        <script src="Code.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>
+            Space Game
+        </title>
+    </head>
+    <body>
+        <script>
+            var ship1 = new SpaceCraft ("A wing Fighter",0,3);
+        </script>
+        <h1>Space Game</h1>
+        <br>
+        <h1>Ship1 information</h1>
+        <br>
+        <div  class="d1" id= "ship1Info">Ship one info here</div>
+        <br>
+        <p>To play: press Display ship 1 info button,
+            add number of astronauts, velocity, and for how long in regular numbers,
+            than hit both submit buttons,
+            than re hit the display ship 1 info button.
+        </p><br>
+        <button class="lgbutton" onclick="ship1.craftInfo();">Display ship1 info</button>
+        <form class="c1" onsubmit="return false">
+            number of Astronauts to add: <input type="number" id="formNumAstro"><br>
+            <input  class="lgbutton" type="submit" onclick="ship1.varAddAstro()">
+        </form>
+        <form class="c1" onsubmit="return false">
+            incresse velocity to: <input type="number" id="formIncVelocity"><br>
+            for how long: <input type="number" id="formIncTime"><br>
+    
+            <input class="lgbutton" type="submit" onclick="ship1.varAccel()">
+        </form>
+    
+
+    </body>
+
+</html>
